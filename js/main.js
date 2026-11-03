@@ -53,7 +53,7 @@
     walk(el);
     el.classList.add("is-split");
   }
-  if (!reduce) $$("[data-split]").forEach(split);
+  $$("[data-split]").forEach((el) => (reduce ? el.classList.add("is-split") : split(el)));
 
   /* ---------- counters ---------- */
   function count(el) {
@@ -405,7 +405,7 @@
   function heroUpdate(time, dt) {
     if (!hero) return;
     const range = hero.offsetHeight - innerHeight;
-    heroP = clamp(window.scrollY / range);
+    heroP = range > 50 ? clamp(window.scrollY / range) : 0; // no scroll sequence on phones
     const e = heroP;
     if (turbo > 0) { turbo -= dt; if (turbo <= 0) ac.classList.remove("is-turbo"); }
     const boost = turbo > 0 ? 1 : 0;
