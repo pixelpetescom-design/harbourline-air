@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harbourline Air | Friendly Air Conditioning Installers in Sydney</title>
+<meta name="description" content="Ducted and split system air conditioning, installed by a friendly team of licensed Sydney technicians. Clear pricing, a 10-year workmanship warranty and a free in-home quote.">
+<meta name="theme-color" content="#081423">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/style.css?v=23">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="logo" href="index.html" aria-label="Harbourline Air home"><svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><path class="l1" pathLength="100" d="M5 17h23a6 6 0 1 0-6-6"/><path class="l2" pathLength="100" d="M3 25.5h38"/><path class="l3" pathLength="100" d="M10 34h19a5.5 5.5 0 1 1-5.5 5.5"/></svg><span class="logo__word">harbourline<em>air</em></span></a>
+    <ul class="nav__links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="ducted-and-split-systems.html">Ducted &amp; Split</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav__cta">
+      
+      <a class="btn btn--ice btn--sm" href="contact.html">Get a free quote <span class="arr" aria-hidden="true"></span></a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="hero">
+  <div class="hero__stage">
+    <div class="hero__room"></div>
+    <div class="hero__chill" id="heroChill"></div>
+
+    <div class="ac-wrap">
+      <div class="ac is-off" id="ac" role="button" tabindex="0" aria-label="Air conditioner. Activate for a burst of extra airflow">
+        <img class="ac__img" src="img/aircon.webp" width="1600" height="534" alt="A white wall-mounted split system air conditioner">
+      </div>
+      <div class="ac-shadow"></div>
+    </div>
+
+    <canvas class="wind" data-mode="vent" aria-hidden="true"></canvas>
+  </div>
+
+  <div class="hero__copy">
+    <div class="hero__phase" id="ph1">
+      <div class="wrap">
+        
+        <h1 data-split>Let&rsquo;s make home <em>comfortable</em> all year.</h1>
+        <div class="hero__row">
+          <div>
+            <p class="hero__sub">We help Sydney families choose, install and look after air conditioning that actually suits their home. A straight answer, a fixed price in writing, and a 10-year workmanship warranty.</p>
+            <div class="hero__btns">
+              <a class="btn btn--ice" href="contact.html">Get a free quote <span class="arr" aria-hidden="true"></span></a>
+              <a class="btn btn--ghost" href="ducted-and-split-systems.html">See what it costs</a>
+            </div>
+          </div>
+          <div class="hero__trust"><span><b>4.9&#9733;</b> 640+ reviews</span><span><b>18</b> years</span><span><b>ARCtick</b> licensed</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__phase hero__phase--2" id="ph2">
+      <div class="wrap">
+        
+        <div class="hero__big">Hot out there. <em>Cool in here.</em></div>
+        <div class="gauge">
+          <div><span>Outside</span><strong>34&deg;</strong></div>
+          <div class="in"><span>Inside</span><strong id="tempIn">34&deg;</strong><div class="gauge__bar"><i></i></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__phase hero__phase--3" id="ph3">
+      <div class="wrap">
+        <div class="hero__big">Now let&rsquo;s cool <em>your</em> place.</div>
+        <p class="hero__sub">Book a free in-home quote. It takes about 30 minutes, and there&rsquo;s no obligation.</p>
+        <div class="hero__btns"><a class="btn btn--ice" href="contact.html">Get a free quote <span class="arr" aria-hidden="true"></span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap strip__in">
+    <div><strong data-count="4.9" data-dec="1" data-suffix="&#9733;">4.9&#9733;</strong><span>640+ Google reviews</span></div>
+    <div><strong data-count="18" data-suffix=" yrs">18 yrs</strong><span>Looking after Sydney</span></div>
+    <div><strong data-count="9400" data-suffix="+">9,400+</strong><span>Systems installed</span></div>
+    <div><strong data-count="10" data-suffix=" yr">10 yr</strong><span>Workmanship warranty</span></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row">
+      <div>
+        <span class="eyebrow">Why people choose us</span>
+        <h2 data-split>Straight answers and <b>tidy work.</b></h2>
+      </div>
+      <a class="btn btn--ink" href="about.html">Meet the team <span class="arr" aria-hidden="true"></span></a>
+    </div>
+    <div class="cards rv">
+      <div class="card"><div class="card__icon"><svg viewBox="0 0 24 24"><path d="M5 3h14v18l-3-2-2 2-2-2-2 2-2-2-3 2z"/><path d="M9 8h6M9 12h4"/></svg></div><h3>No surprises on price</h3><p>After a quick visit we give you one price in writing, covering equipment, install, electrical and testing. If we spot something unexpected on the day, we call you first.</p></div>
+      <div class="card"><div class="card__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></div><h3>The right size for your home</h3><p>An oversized system costs more to buy and to run. We look at each room, your insulation and how you live, then recommend what you actually need.</p></div>
+      <div class="card"><div class="card__icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 14.5c3 0 5.5 2 5.5 5"/></svg></div><h3>The same friendly faces</h3><p>The person who visits you designs your system, and the team who designs it installs it. You&rsquo;ll know who&rsquo;s coming and when.</p></div>
+      <div class="card"><div class="card__icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h3>We stand behind our work</h3><p>Ten years of workmanship cover on every install, plus the manufacturer&rsquo;s warranty. If something isn&rsquo;t right, ring us and we&rsquo;ll sort it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--linen">
+  <div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow">How we can help</span>
+      <h2 data-split>Whatever the space, <b>we&rsquo;ve got it.</b></h2>
+    </div>
+    <div class="tiles rv">
+      <a class="tile tile--a" href="ducted-and-split-systems.html#ducted" data-cursor="View">
+        <img src="img/bedroom.jpg" alt="Calm bedroom with a slim ceiling air conditioning vent" loading="lazy">
+        <h3>Ducted air conditioning</h3>
+        <p>Quiet comfort throughout your home, with neat vents in the ceiling. Choose which rooms you cool or heat, and save on the ones you aren&rsquo;t using.</p>
+        <span class="more">Explore ducted</span>
+      </a>
+      <a class="tile tile--b" href="ducted-and-split-systems.html#split" data-cursor="View">
+        <img src="img/living.jpg" alt="Family relaxing in a living room with a split system on the wall" loading="lazy" style="object-position:30% 50%">
+        <h3>Split systems</h3>
+        <p>A simple, efficient way to keep a bedroom, living room or open-plan space comfortable.</p>
+        <span class="more">Explore split systems</span>
+      </a>
+      <a class="tile tile--c" href="services.html#commercial" data-cursor="View">
+        <img src="img/tech.jpg" alt="Technician installing an outdoor air conditioning unit" loading="lazy">
+        <h3>Commercial and strata</h3>
+        <p>We look after caf&eacute;s and clinics as well as offices and apartment buildings, working around your opening hours.</p>
+        <span class="more">Talk to our commercial team</span>
+      </a>
+      <a class="tile tile--d tile--plain" href="services.html#servicing" data-cursor="Book">
+        <canvas class="wind" data-mode="drift" aria-hidden="true"></canvas>
+        <h3>Servicing and repairs</h3>
+        <p>Annual check-ups, filter cleans and fast repairs on most major brands. Breakdown line open 24/7.</p>
+        <span class="more">Book a service</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--navy">
+  <div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow">What to expect</span>
+      <h2 data-split>From hello to handover.</h2>
+      <p class="lead">Five steps from first call to handover, and you&rsquo;ll always know who&rsquo;s coming.</p>
+    </div>
+    <ol class="steps rv">
+      <li><h3>Say hello</h3><p>Tell us about your home and we&rsquo;ll book a visit.</p></li>
+      <li><h3>We pop round</h3><p>We measure up, check the roof, walls and switchboard, and chat through options.</p></li>
+      <li><h3>Your fixed quote</h3><p>In your inbox within 48 hours. No pressure.</p></li>
+      <li><h3>Installation day</h3><p>Most splits take a day, ducted two to three. We tidy up every evening.</p></li>
+      <li><h3>Handover</h3><p>We show you how it all works and register your warranties.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" style="padding-bottom:clamp(40px,5vw,64px)">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Brands we install</span>
+      <h2 data-split>We&rsquo;ll talk you through <b>a couple that suit.</b></h2>
+    </div>
+    <p class="lead rv">Not sure which to pick? We&rsquo;ll recommend what fits your home and budget, and we&rsquo;ll tell you honestly when the cheaper one is the better choice.</p>
+  </div>
+</section>
+<div class="marquee" aria-label="Brands: Daikin, Mitsubishi Electric, Fujitsu General, Panasonic, ActronAir, LG">
+  <div class="marquee__track" aria-hidden="true">
+    <span>Daikin</span><span>Mitsubishi Electric</span><span>Fujitsu General</span><span>Panasonic</span><span>ActronAir</span><span>LG</span>
+    <span>Daikin</span><span>Mitsubishi Electric</span><span>Fujitsu General</span><span>Panasonic</span><span>ActronAir</span><span>LG</span>
+  </div>
+</div>
+
+<section class="sec sec--linen">
+  <div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow">Kind words</span>
+      <h2 data-split>From our <b>customers.</b></h2>
+    </div>
+    <div class="reviews rv">
+      <div class="review"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&ldquo;Quote on Tuesday, install on Thursday. The team were tidy, on time and explained everything. The house is finally comfortable in summer.&rdquo;</blockquote><cite><i>MR</i><span><b>Michelle R.</b>Marrickville &middot; Ducted, 6 zones</span></cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&ldquo;Three companies quoted us. Harbourline were the only ones to actually measure the rooms. It&rsquo;s quiet and our power bill is lower than with the old unit.&rdquo;</blockquote><cite><i>DT</i><span><b>David &amp; Priya T.</b>Lane Cove &middot; Split systems</span></cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&ldquo;They replaced our caf&eacute; system on a Monday, when we&rsquo;re closed. We opened Tuesday right on time.&rdquo;</blockquote><cite><i>SK</i><span><b>Sam K.</b>Newtown &middot; Commercial</span></cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--tight">
+  <div class="wrap">
+    <div class="band rv">
+      <canvas class="wind" data-mode="drift" aria-hidden="true"></canvas>
+      <div>
+        <span class="eyebrow" style="color:var(--ice)">Finance</span>
+        <h3>Spread the cost.</h3>
+        <p>Interest-free payment plans are available on approved applications. See your options in about a minute, with no impact on your credit score.</p>
+        <small>Subject to eligibility. Terms and fees apply.</small>
+      </div>
+      <div class="band__cta"><a class="btn btn--ice" href="contact.html#finance">Check my options <span class="arr" aria-hidden="true"></span></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:clamp(24px,3vw,40px)">
+  <div class="wrap map-grid">
+    <div class="rv">
+      <span class="eyebrow">Where we work</span>
+      <h2 data-split>All over <b>Greater Sydney.</b></h2>
+      <p class="lead">Pop in your postcode to check we come to you, or tap an area on the map.</p>
+      <form class="pc" id="pcForm">
+        <input id="pcIn" inputmode="numeric" maxlength="4" placeholder="Your postcode" aria-label="Postcode">
+        <button class="btn btn--ink" type="submit">Check <span class="arr" aria-hidden="true"></span></button>
+      </form>
+      <p class="note" id="pcOut" aria-live="polite">For example, 2204 for Marrickville.</p>
+      <div class="areas" id="areaList" style="margin-top:22px">
+        <button type="button" data-area="inner">Inner West &amp; City</button><button type="button" data-area="east">Eastern Suburbs</button><button type="button" data-area="north">North Shore</button><button type="button" data-area="beaches">Northern Beaches</button><button type="button" data-area="hills">Hills District</button><button type="button" data-area="west">Parramatta &amp; Western Sydney</button><button type="button" data-area="south">St George &amp; Sutherland Shire</button>
+      </div>
+    </div>
+    <div class="map rv"><div id="map" role="region" aria-label="Map of the Sydney areas we service"></div></div>
+  </div>
+</section>
+
+<section class="cta">
+  <canvas class="wind" data-mode="drift" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h2 data-split>Ready for a cooler, quieter summer?</h2>
+    <p>Book a free in-home quote. It takes about 30 minutes, and there&rsquo;s no obligation.</p>
+    <div class="cta__btns">
+      <a class="btn btn--ice" href="contact.html">Get a free quote <span class="arr" aria-hidden="true"></span></a>
+      <a class="btn btn--ghost" href="tel:1300000000">Call 1300 000 000</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top"><a class="logo" href="index.html" aria-label="Harbourline Air home"><svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><path class="l1" pathLength="100" d="M5 17h23a6 6 0 1 0-6-6"/><path class="l2" pathLength="100" d="M3 25.5h38"/><path class="l3" pathLength="100" d="M10 34h19a5.5 5.5 0 1 1-5.5 5.5"/></svg><span class="logo__word">harbourline<em>air</em></span></a></div>
+    <div class="foot__row"><div class="socials"><a href="#" aria-label="Harbourline Air on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.2V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a><a href="#" aria-label="Harbourline Air on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" class="stroke"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" class="dot"/></svg></a><a href="#" aria-label="Harbourline Air on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4v12H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.4 2.6 4.4 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg></a><a href="#" aria-label="Harbourline Air on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4a2.5 2.5 0 0 0-1.8 1.8A26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a></div><ul class="foot__contact"><li><a href="tel:1300000000"><svg class="ci" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h3.5l1.8 4.6-2.3 1.4a12 12 0 0 0 7 7l1.4-2.3L21 15.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>1300 000 000</a></li><li><a href="mailto:hello@harbourline.example"><svg class="ci" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>hello@harbourline.example</a></li><li><svg class="ci" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg>12 Example Street, Marrickville NSW 2204</li></ul></div>
+    <div class="foot__giant" data-wind-host aria-hidden="true"><svg class="giant" xmlns="http://www.w3.org/2000/svg" focusable="false"><defs><text id="gw" x="0" y="0" font-size="300" font-weight="700" letter-spacing="-13" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif">harbourline</text><clipPath id="gclip"><use href="#gw"/></clipPath></defs><use href="#gw" class="giant__base"/><foreignObject class="giant__fo" clip-path="url(#gclip)"><canvas class="wind" data-mode="word"></canvas></foreignObject></svg></div>
+    <div class="foot__legal"><span>&copy; 2026 Harbourline Air Pty Ltd. Mock-up. Not a real business.</span><span>Privacy &middot; Terms</span></div>
+  </div>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="js/main.js?v=23" defer></script>
+</body>
+</html>
